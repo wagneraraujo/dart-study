@@ -32,8 +32,9 @@ main(){
     'loja',
     'plantas',
   ];
-  print (nav);
+  print (nav)
 
+  
 
 var listOfInts = [1, 2, 3];
 var listOfStrings = [
