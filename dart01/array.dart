@@ -13,6 +13,6 @@ void main(){
   arraydinamico.insert(0, 'andri');
 
   //remover uma sequencia de  dados, intervalo de incidei do 1 a0 2
-  arraydinamico.removeRange(1,2);
+  arraydinamico.removeRange(1,2)
   print(arraydinamico);
 }
