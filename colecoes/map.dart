@@ -38,8 +38,45 @@ listForEach(){
   List<String> listaGerada = List.generate(2, (nomeFuncao) => 'nome:${nomeFuncao}');
   print('lista Preenchida: $listaPreenchida \nListaGerada: $listaGerada');
 
+
+
+ 
+
 }
+ //map
+  //transforma/seleciona os elementos da uma coleção criando uma nova do mesmo tamanho
+  listMap(){
+    print('map------');
+    List<String> frutas = ['morango', 'banana', 'tomate'];
+    List<String> frutasMapeadas = frutas.map((e) => '$e á uma fruta').toList();
+    print(frutasMapeadas);
+  }
+
+
+  //every
+  //faz o teste em todos os elemtnos com o operador lógico && retornando true ou false
+  listEvery(){
+    print('\n-----test every');
+    List<int> inteiros = [0,2,3,4,5];
+    bool resultado = inteiros.every((e) => e >= 0);
+    print(resultado);
+  }
+
+
+  //where
+  // filtra os elementos da colecao criando uma nova do mesmo tamanho ou menor
+  listWhere(){
+    List<int> idades = [2,33,45,66];
+    print(idades.where((e) => e is int).toList());
+  }
+
+
 
 main(){
   listForEach();
-}
+  listMap();
+  listEvery();
+  listWhere();
+  }
+  
+
