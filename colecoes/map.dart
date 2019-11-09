@@ -71,12 +71,32 @@ listForEach(){
   }
 
 
+  //reduce
+  //compara os elementos da colecao retornando 1 unico elemento resultante
+  //ao interagir com os elementos, o indice 0 se torna 1 e o 1 se tor o atual
+
+  listReduce(){
+    List<int> numerosPares = List.generate(6, (i) => i * 2);
+    print(numerosPares);
+
+    int resultado = numerosPares.reduce((anterior, atual){
+      return anterior + atual;
+    });
+
+    print(resultado);
+  }
+
+  //fold 
+  //comparar os elementos da colecao retornano 1 unico elemento resultante
+
+
 
 main(){
   listForEach();
   listMap();
   listEvery();
   listWhere();
+  listReduce();
   }
   
 
