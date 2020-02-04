@@ -2,47 +2,39 @@
 //   var number = 28;
 //   printInteger(number);
 // }
-printInteger(int aNumber){
+printInteger(int aNumber) {
   print('o numberto e $aNumber');
 }
-printString(String meuNome){
+
+printString(String meuNome) {
   print('Meu nome e: ${meuNome}');
 }
-main(){
+
+main() {
   //para variaveis que eu nunca pretendo mudar o valor, usar final ou const
   final nome = 'Wagner';
   const sobrenome = 'araújo Costa da silveira';
-  for(int i = 0; i < 1; i++){
+  for (int i = 0; i < 1; i++) {
     print('ola ${i + 1}');
   }
   var meuNome = 'wagner araujo';
   printString(meuNome);
   var constante = const ['Wagner', "Araujo"];
-  var meuArray = [1,2,3];
+  var meuArray = [1, 2, 3];
   print('-----------');
-  var lista = [1,2,35];
-  var lista2 = [4,6,7];
-  var novalista = [9,...lista];
+  var lista = [1, 2, 35];
+  var lista2 = [4, 6, 7];
+  var novalista = [9, ...lista];
   print(novalista);
-
-
 
   var nav = [
     'casa',
     'loja',
     'plantas',
   ];
-  print (nav)
+  print(nav);
 
-  
-
-var listOfInts = [1, 2, 3];
-var listOfStrings = [
-  '#0',
-  for (var i in listOfInts) '#$i'
-];
-assert(listOfStrings[1] == '#2');
-
+  var listOfInts = [1, 2, 3];
+  var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
+  assert(listOfStrings[1] == '#2');
 }
-
-
